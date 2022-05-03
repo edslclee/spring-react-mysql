@@ -1,0 +1,28 @@
+Server:
+  servlet:
+    encooding:
+      charset: utf-8
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?serverTimezone=Asia/Seoul
+    username: cos
+    password: cos1234
+
+  jpa:
+    open-in-view: true
+    hivernate:
+       ddl-auto: create #create, update, none
+       naming:
+         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandard.dimpl
+       use-new-id-generator-mapping: false
+    show-sql: true
+    properties:
+      hibernate.format_sql:true
+
+
+
+
+
+
